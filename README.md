@@ -2,6 +2,19 @@
 
 Proyecto demo con Spring Boot para simular pagos con foco en Seguridad (JWT, roles, CORS, firmas) y AOP (auditoría, logging, validaciones previas). Incluye una UI simple con Thymeleaf y JS para consumir la API.
 
+## Tecnologías
+
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Yape](https://img.shields.io/badge/Yape-7A1FD0?style=for-the-badge)
+![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
+![Visa](https://img.shields.io/badge/Visa-1A1F71?style=for-the-badge&logo=visa&logoColor=white)
+![MasterCard](https://img.shields.io/badge/MasterCard-EB001B?style=for-the-badge&logo=mastercard&logoColor=white)
+![American Express](https://img.shields.io/badge/American%20Express-2E77BC?style=for-the-badge&logo=americanexpress&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white)
+
 ## Estado de Cumplimiento
 - Seguridad: Sí
   - Autenticación JWT: Sí
