@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - API de Pagos</title>
+  <link rel="stylesheet" href="/app.css" />
+</head>
+<body class="center">
+  <div class="card login-card">
+    <div class="card-body">
+      <h1 class="mb-1">API de Pagos Simulada</h1>
+      <p class="mb-2" style="color:var(--muted)">Inicia sesión para continuar</p>
+      <form id="loginForm">
+        <div class="form-grid">
+          <label class="full">
+            <span>Email</span>
+            <input id="email" type="email" placeholder="correo@dominio.com" required />
+          </label>
+          <label class="full">
+            <span>Contraseña</span>
+            <input id="password" type="password" placeholder="********" required />
+          </label>
+        </div>
+        <div class="actions">
+          <button type="submit" class="w-100">Ingresar</button>
+        </div>
+        <div id="msg" class="msg"></div>
+      </form>
+      <hr class="mt-4" />
+      <div class="fx right">
+        <a href="/crear_cuenta" class="button-outline" style="padding:8px 12px;text-decoration:none">Crear cuenta</a>
+      </div>
+    </div>
+  </div>
+  <script src="/login.js"></script>
+</body>
+</html>

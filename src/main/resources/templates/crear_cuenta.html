@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear cuenta - API de Pagos</title>
+  <link rel="stylesheet" href="/app.css" />
+</head>
+<body class="center">
+  <div class="card login-card">
+    <div class="card-body">
+      <h1 class="mb-1">Crear cuenta</h1>
+      <p class="mb-2" style="color:var(--muted)">Registra un usuario con rol CLIENTE.</p>
+      <form id="signupForm">
+        <div class="form-grid">
+          <label class="full">
+            <span>Nombre</span>
+            <input id="nombre" type="text" placeholder="Tu nombre" required />
+          </label>
+          <label class="full">
+            <span>Email</span>
+            <input id="email" type="email" placeholder="correo@dominio.com" required />
+          </label>
+          <label class="full">
+            <span>Contraseña</span>
+            <input id="password" type="password" placeholder="********" required />
+          </label>
+        </div>
+        <div class="actions">
+          <button type="submit" class="w-100">Crear cuenta</button>
+        </div>
+        <div id="msg" class="msg"></div>
+      </form>
+      <hr class="mt-4" />
+      <div class="fx right">
+        <a href="/login" class="button-outline" style="padding:8px 12px;text-decoration:none">Volver al login</a>
+      </div>
+    </div>
+  </div>
+  <script src="/crear_cuenta.js"></script>
+</body>
+</html>

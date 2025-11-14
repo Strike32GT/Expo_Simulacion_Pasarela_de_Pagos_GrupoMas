@@ -1,0 +1,55 @@
+/* Base layout */
+:root{--bg:#f6f7f9;--fg:#111;--muted:#6b7280;--primary:#111;--primary-contrast:#fff;--surface:#fff;--border:#e5e7eb}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--fg)}
+
+/* Containers */
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.header{display:flex;align-items:center;justify-content:space-between}
+
+/* Card */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.05)}
+.card-body{padding:20px}
+.card-title{margin:0 0 12px;font-weight:700}
+
+/* Forms */
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.form-grid .full{grid-column:1/-1}
+label{display:flex;flex-direction:column;gap:6px;font-size:14px}
+input{padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:#fff}
+button{appearance:none;border:none;border-radius:10px;background:var(--primary);color:var(--primary-contrast);padding:10px 14px;cursor:pointer}
+.button-outline{background:#fff;border:1px solid var(--border);color:var(--fg)}
+.actions{margin-top:12px}
+
+/* Tabs */
+.tabs{display:flex;gap:8px;margin:16px 0}
+.tab{padding:8px 12px;border:1px solid var(--border);background:#fff;border-radius:8px;cursor:pointer}
+.tab.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+
+/* Login page */
+.center{min-height:100vh;display:grid;place-items:center}
+.login-card{width:min(92vw,420px)}
+.msg{margin-top:10px;font-size:14px}
+.msg.ok{color:#16a34a}.msg.err{color:#b91c1c}
+
+/* Index tweaks */
+.pre{background:#111;color:#0f0;padding:12px;border-radius:10px;overflow:auto}
+
+/* Simple utilities for spacing */
+.mt-2{margin-top:8px}.mt-3{margin-top:12px}.mt-4{margin-top:16px}
+.mb-0{margin-bottom:0}.mb-1{margin-bottom:4px}.mb-2{margin-bottom:8px}
+.fx{display:flex;align-items:center;gap:10px}
+.right{justify-content:flex-end}
+
+/* Mini card preview */
+.mini-card{width:260px;height:150px;border-radius:14px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:14px;margin:10px 0;transition:background .2s ease, box-shadow .2s ease}
+.mini-card-brand{font-weight:700;letter-spacing:.5px}
+.mini-card-number{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:18px;letter-spacing:1px}
+.card-black{background:#111;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.card-visa{background:#1e40af;box-shadow:0 6px 20px rgba(30,64,175,.35)} /* azul */
+.card-master{background:#b91c1c;box-shadow:0 6px 20px rgba(185,28,28,.35)} /* rojo */
+.card-diners{background:#6b7280;box-shadow:0 6px 20px rgba(107,114,128,.35)} /* gris */
+.card-amex{background:#94a3b8;box-shadow:0 6px 20px rgba(148,163,184,.35)} /* platino */
